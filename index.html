@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiseha Seifu Jiksa - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #2c3e50;
@@ -34,63 +33,11 @@
             padding: 0 20px;
         }
         
-        /* Navigation */
-        nav {
-            background-color: var(--primary);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-        }
-        
-        .logo {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 25px;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: var(--secondary);
-        }
-        
-        .mobile-menu {
-            display: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        /* Header */
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 150px 0 80px;
+            padding: 100px 0 60px;
             text-align: center;
-            margin-top: 60px;
         }
         
         .profile-img {
@@ -101,15 +48,6 @@
             border: 5px solid white;
             margin-bottom: 20px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            background-color: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-        }
-        
-        .profile-img span {
-            color: #777;
         }
         
         h1 {
@@ -121,9 +59,6 @@
             font-size: 1.2rem;
             margin-bottom: 20px;
             opacity: 0.9;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
         }
         
         .contact-info {
@@ -138,23 +73,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 25px;
-            transition: background 0.3s, transform 0.3s;
-        }
-        
-        .btn:hover {
-            background: #c0392b;
-            transform: translateY(-3px);
         }
         
         section {
@@ -190,7 +108,6 @@
             transform: translateY(-5px);
         }
         
-        /* Timeline */
         .timeline {
             position: relative;
             max-width: 800px;
@@ -254,7 +171,6 @@
             margin-bottom: 10px;
         }
         
-        /* Skills */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -285,7 +201,6 @@
             color: var(--secondary);
         }
         
-        /* Certifications */
         .cert-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -311,7 +226,6 @@
             margin-bottom: 15px;
         }
         
-        /* Projects */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -330,15 +244,6 @@
             transform: translateY(-5px);
         }
         
-        .project-img {
-            height: 180px;
-            background-color: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-        }
-        
         .project-content {
             padding: 20px;
         }
@@ -349,7 +254,6 @@
             color: var(--primary);
         }
         
-        /* Footer */
         footer {
             background: var(--dark);
             color: white;
@@ -377,56 +281,7 @@
             background: rgba(255,255,255,0.2);
         }
         
-        /* Edit Instructions */
-        .edit-instructions {
-            background: #f8f9fa;
-            border-left: 4px solid var(--secondary);
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .edit-instructions h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-        
-        .edit-instructions ul {
-            margin-left: 20px;
-        }
-        
-        .edit-instructions li {
-            margin-bottom: 10px;
-        }
-        
-        /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 60px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 60px);
-                background: var(--primary);
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                padding-top: 40px;
-                transition: left 0.3s;
-            }
-            
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                margin: 15px 0;
-            }
-            
-            .mobile-menu {
-                display: block;
-            }
-            
             .timeline::before {
                 left: 30px;
             }
@@ -449,74 +304,40 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Fiseha Seifu</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
     <header>
         <div class="container">
-            <div class="profile-img">
-                <span>Add Your Photo</span>
+            <!-- Placeholder for profile image - replace with actual image -->
+            <div class="profile-img" style="background-color: #ddd; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                <span style="color: #777;">Profile Image</span>
             </div>
             <h1>Fiseha Seifu Jiksa</h1>
             <p class="tagline">Dynamic Professional with 10+ Years in Sales, Marketing & Project Management</p>
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <span>📍</span>
                     <span>Sahilete Mihret road, Addis Ababa, Ethiopia</span>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i>
+                    <span>📞</span>
                     <span>+251920468588 / +251921776533</span>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
+                    <span>✉️</span>
                     <span>flove1387@gmail.com</span>
                 </div>
             </div>
-            <a href="#contact" class="btn">Get In Touch</a>
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">Professional Summary</h2>
             <div class="card">
                 <p>Results-driven professional with over 10 years of cross-industry experience in sales, marketing, and project management. Proven ability to drive revenue growth, lead high-impact campaigns, and execute strategic initiatives across healthcare, FMCG, ICT, and education sectors. Strong background in business development, digital marketing, and team leadership.</p>
             </div>
-            
-            <!-- Edit Instructions -->
-            <div class="edit-instructions">
-                <h3>How to Edit This Website</h3>
-                <ul>
-                    <li><strong>To change text:</strong> Simply find the text you want to change in the HTML code and replace it</li>
-                    <li><strong>To add your photo:</strong> Replace the &lt;div class="profile-img"&gt; with &lt;img src="your-photo.jpg" class="profile-img"&gt;</li>
-                    <li><strong>To change colors:</strong> Modify the CSS variables in the :root section at the top</li>
-                    <li><strong>To add sections:</strong> Copy an existing section and modify the content</li>
-                    <li><strong>To add more certifications:</strong> Duplicate a .cert-item and update the content</li>
-                </ul>
-            </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
@@ -546,12 +367,70 @@
                     </div>
                 </div>
                 
-                <!-- Add more timeline items here -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">April 2022 - Nov 2023</div>
+                        <h3>Project Manager</h3>
+                        <h4>EMG Consulting</h4>
+                        <ul>
+                            <li>Directed end-to-end implementation of strategic development projects</li>
+                            <li>Managed budgets, stakeholder relationships, and evaluation frameworks</li>
+                            <li>Ensured timely delivery aligned with client goals</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2021 - March 2022</div>
+                        <h3>Sales and Marketing Manager</h3>
+                        <h4>Hadero Coffee Company</h4>
+                        <ul>
+                            <li>Drove B2B and B2C engagement strategies, increasing market penetration</li>
+                            <li>Led promotional campaign execution and distributor network expansion</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2020 - Feb 2021</div>
+                        <h3>Portfolio Manager</h3>
+                        <h4>Addis Concept Property Management (ADCO)</h4>
+                        <ul>
+                            <li>Managed diverse property portfolio, contracts, and client relations</li>
+                            <li>Oversaw budgeting, tenant communications, and service delivery</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">April 2019 - March 2020</div>
+                        <h3>Sales and Marketing Manager</h3>
+                        <h4>Resel Pick Pick ICT Technology</h4>
+                        <ul>
+                            <li>Led sales strategy, digital marketing, and CRM implementation</li>
+                            <li>Conducted market research and built client relationships</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2016 - Jan 2019</div>
+                        <h3>Sales and Marketing Representative</h3>
+                        <h4>Transsion Holding PLC (Tecno Mobile)</h4>
+                        <ul>
+                            <li>Promoted and sold mobile products through retail outlets</li>
+                            <li>Managed distribution channels and executed in-store branding</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <div class="container">
             <h2 class="section-title">Education</h2>
@@ -566,7 +445,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
@@ -577,126 +455,159 @@
                         <li>Project planning and scheduling</li>
                         <li>Budgeting and financial management</li>
                         <li>Risk management and mitigation</li>
-                        <!-- Add more skills here -->
+                        <li>Quality assurance and control</li>
+                        <li>Stakeholder engagement and management</li>
+                        <li>Resource allocation and optimization</li>
+                        <li>Change management implementation</li>
                     </ul>
                 </div>
                 
-                <!-- Add more skill categories here -->
+                <div class="skill-category">
+                    <h3>Sales & Marketing Expertise</h3>
+                    <ul class="skill-list">
+                        <li>Market research and competitive analysis</li>
+                        <li>Product positioning and pricing strategies</li>
+                        <li>Lead generation and pipeline management</li>
+                        <li>CRM systems and customer retention</li>
+                        <li>Marketing campaign planning/execution</li>
+                        <li>Digital marketing (SEO, SEM, social media)</li>
+                        <li>Sales forecasting and target achievement</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Business Strategy & Financial Acumen</h3>
+                    <ul class="skill-list">
+                        <li>Portfolio analysis and optimization</li>
+                        <li>Investment evaluation and selection</li>
+                        <li>Asset allocation strategies</li>
+                        <li>Growth opportunity identification</li>
+                        <li>Contract negotiation and deal structuring</li>
+                        <li>Revenue forecasting and financial modeling</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Leadership & Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Strategic thinking and planning</li>
+                        <li>Team leadership and motivation</li>
+                        <li>Conflict resolution and negotiation</li>
+                        <li>Decision-making and prioritization</li>
+                        <li>Adaptability in dynamic environments</li>
+                        <li>Time management and multitasking</li>
+                        <li>Persuasive communication (verbal/written)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
     <section id="certifications">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="cert-grid">
                 <div class="cert-item">
-                    <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="cert-icon">📊</div>
                     <h3>Digital Marketing</h3>
                     <p>Great Learning Academy</p>
                 </div>
                 
                 <div class="cert-item">
-                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-icon">🤖</div>
                     <h3>Generative AI for Beginners</h3>
                     <p>Great Learning Academy</p>
                 </div>
                 
-                <!-- Add more certification items here -->
+                <div class="cert-item">
+                    <div class="cert-icon">🔍</div>
+                    <h3>Google Ads Campaign</h3>
+                    <p>Great Learning Academy</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">🎨</div>
+                    <h3>Graphic Design with Photoshop</h3>
+                    <p>Great Learning Academy</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">💰</div>
+                    <h3>Business Finance Foundations</h3>
+                    <p>Great Learning Academy</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">🧠</div>
+                    <h3>Introduction to Neural Networks</h3>
+                    <p>Great Learning Academy</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">⚙️</div>
+                    <h3>Operations Management</h3>
+                    <p>Great Learning Academy</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">📈</div>
+                    <h3>FSSC 22000 Quality Management</h3>
+                    <p>IQM</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">⛓️</div>
+                    <h3>Blockchain Basics</h3>
+                    <p>Great Learning Academy</p>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-icon">💻</div>
+                    <h3>MEAN Stack Fundamentals</h3>
+                    <p>Great Learning Academy</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img">Project Image</div>
                     <div class="project-content">
                         <h3 class="project-title">Automated Fleet Management</h3>
                         <p>Customized system for decreasing drunk driving incidents through automated monitoring and alerts.</p>
                     </div>
                 </div>
                 
-                <!-- Add more project cards here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="card">
-                <div style="text-align: center;">
-                    <p>I'm always open to discussing new opportunities and collaborations.</p>
-                    <div class="contact-info" style="margin-top: 20px;">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>flove1387@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+251920468588</span>
-                        </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Automated Employee Attendance</h3>
+                        <p>Attendance automation through QR code scanning on mobile devices for efficient workforce management.</p>
                     </div>
-                    <div class="social-links" style="margin-top: 20px;">
-                        <a href="https://www.linkedin.com/in/fiseha-seifu-b15b56113" class="social-link">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="mailto:flove1387@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">After-Sales Service Impact Analysis</h3>
+                        <p>Research on the effect of after-sales service on customer satisfaction and loyalty in the mobile industry.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Fiseha Seifu Jiksa. All Rights Reserved.</p>
+            <h2>Get In Touch</h2>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/fiseha-seifu-b15b56113" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:flove1387@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                </a>
+                <a href="https://www.linkedin.com/in/fiseha-seifu-b15b56113" class="social-link">LinkedIn</a>
+                <a href="mailto:flove1387@gmail.com" class="social-link">Email</a>
+                <a href="tel:+251920468588" class="social-link">Phone</a>
             </div>
+            <p>&copy; 2025 Fiseha Seifu Jiksa. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    document.querySelector('.nav-links').classList.remove('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
